@@ -16,9 +16,9 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: May 2025</p>
+<p class="updated">Last updated: June 2026</p>
 
-<p>BabyQuil ("we", "our", or "the app") is a pregnancy and baby tracking application developed for personal use by parents. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
+<p>BabyQuil ("we", "our", or "the app") is a pregnancy and baby tracking application developed for parents. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
 
 <h2>1. Data We Collect</h2>
 <p>BabyQuil collects only the data you choose to enter. This includes:</p>
@@ -28,32 +28,41 @@
   <li><strong>Pregnancy tracking:</strong> weekly notes, health logs (weight, blood pressure, symptoms), kick counter sessions, supplement records, bump photos</li>
   <li><strong>Baby tracking:</strong> feeding logs, sleep logs, nappy logs, daily care records, growth measurements, milestone records, baby photos</li>
   <li><strong>Appointments and doctor notes</strong></li>
+  <li><strong>Account information:</strong> email address (if you sign in with email/password), or your Google or Apple account identity (if you use those sign-in methods)</li>
 </ul>
 <p>We do not collect any data automatically beyond what is necessary for the app to function (see Section 3).</p>
 
 <h2>2. How We Store Your Data</h2>
 <p>Your data is stored in two ways:</p>
 <ul>
-  <li><strong>On your device:</strong> All data is stored locally using Hive, a lightweight database on your phone. The app works fully offline.</li>
-  <li><strong>In the cloud (optional):</strong> If you sign in or enable backup, your data is synced to Google Firebase Firestore and Firebase Storage, hosted on Google Cloud servers. This allows your data to be available across devices and protected against phone loss.</li>
+  <li><strong>On your device:</strong> A local copy of your data is stored using Hive, a lightweight database on your phone. The app works offline.</li>
+  <li><strong>In the cloud:</strong> Your data is synced to Google Firebase Firestore, hosted on Google Cloud servers. This keeps your data safe if you change or lose your phone, and allows you to restore your data by signing back in to your account.</li>
 </ul>
 
 <h2>3. Authentication</h2>
-<p>BabyQuil uses Firebase Authentication (provided by Google). On first launch, the app signs in anonymously to create a stable, private user identifier — no email or password is required. You may optionally sign in with email/password or a Google account to enable cloud backup and cross-device access.</p>
+<p>BabyQuil requires you to create an account to use the app. You can sign in using:</p>
+<ul>
+  <li>Email address and password</li>
+  <li>Google account</li>
+  <li>Apple ID (iOS only)</li>
+</ul>
+<p>Authentication is handled by Firebase Authentication (provided by Google). If you sign in with email and password, we send a verification email to confirm your address. We do not store your password — it is managed securely by Firebase.</p>
 
 <h2>4. Photos</h2>
-<p>Photos you add (bump photos, baby photos) are stored locally on your device. If cloud backup is enabled, photos are uploaded to Firebase Storage under your private user account. Photos are never shared publicly or with third parties.</p>
+<p>Photos you add (bump photos, baby photos) are stored locally on your device. They are not uploaded to any cloud server. If you uninstall the app, locally stored photos are removed from the app's storage.</p>
 
 <h2>5. Push Notifications</h2>
-<p>BabyQuil may send local notifications (e.g. supplement reminders, appointment alerts). These are generated on your device and do not involve sending your data to a server. Firebase Cloud Messaging may be used for future remote notifications; no personal data is included in these messages.</p>
+<p>BabyQuil may send local notifications (e.g. appointment reminders). These are generated on your device and do not involve sending your data to a server. Firebase Cloud Messaging may be used for future remote notifications; no personal data is included in these messages.</p>
 
 <h2>6. Data Sharing</h2>
 <p>We do not sell, rent, or share your personal data with any third party for marketing or advertising purposes. Data is only shared with the following service providers, solely to operate the app:</p>
 <ul>
-  <li><strong>Google Firebase</strong> (Authentication, Firestore, Storage, Messaging) — for cloud sync and notifications</li>
+  <li><strong>Google Firebase</strong> (Authentication, Firestore, Cloud Messaging) — for account management and cloud sync</li>
   <li><strong>Google Sign-In</strong> — if you choose to sign in with Google</li>
+  <li><strong>Apple Sign-In</strong> — if you choose to sign in with Apple</li>
+  <li><strong>Google Play Billing</strong> — to process the one-time premium purchase</li>
 </ul>
-<p>Both services are governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+<p>These services are governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
 
 <h2>7. Children's Privacy</h2>
 <p>BabyQuil is designed for use by parents and caregivers. The app records information <em>about</em> babies and children, but is not directed at children. We do not knowingly collect personal data from children under 13 directly.</p>
@@ -61,8 +70,9 @@
 <h2>8. Data Retention and Deletion</h2>
 <p>Your data is retained for as long as you use the app. You can delete your data at any time:</p>
 <ul>
+  <li><strong>In-app deletion:</strong> Go to Profile → Delete Account. This immediately deletes your account and all associated cloud data permanently.</li>
   <li><strong>Local data:</strong> Uninstalling the app removes all locally stored data from your device.</li>
-  <li><strong>Cloud data:</strong> You can request deletion of your cloud data by contacting us at the email below. We will delete your Firebase account and all associated data within 30 days.</li>
+  <li><strong>By request:</strong> You may contact us at the email below to request deletion of your data. We will process your request within 30 days.</li>
 </ul>
 
 <h2>9. Security</h2>
